@@ -5,141 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acara 1 | HTML CSS</title>
-    <style>
-        /* Warna dasar dan font */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: linear-gradient(to bottom right, #b3e6ff, #e6faff);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+    
+<link rel="stylesheet" href="app.css">
 
-        header {
-            text-align: center;
-            background: linear-gradient(135deg, #4da6ff, #66c2ff);
-            color: white;
-            padding: 40px 20px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            border-radius: 20px;
-            width: 80%;
-            max-width: 900px;
-            margin-top: 30px;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 3em;
-        }
-
-        header h3 {
-            margin-top: 10px;
-            font-weight: normal;
-        }
-
-        .container {
-            background: white;
-            padding: 30px;
-            border-radius: 20px;
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-            width: 80%;
-            max-width: 900px;
-            margin: 30px auto;
-        }
-
-        p {
-            line-height: 1.8;
-            text-align: justify;
-        }
-
-        h4 {
-            color: #0077cc;
-            border-left: 5px solid #4da6ff;
-            padding-left: 10px;
-            margin-top: 30px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 15px 0;
-            background: #f9fcff;
-            border-radius: 10px;
-            overflow: hidden;
-        }
-
-        table th {
-            background: #4da6ff;
-            color: white;
-            padding: 10px;
-        }
-
-        table td {
-            padding: 10px;
-            text-align: center;
-        }
-
-        table tr:nth-child(even) {
-            background: #e6f2ff;
-        }
-
-        .list-box {
-            background: #f0faff;
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
-        }
-
-        ol {
-            margin: 0;
-            padding-left: 25px;
-        }
-
-        ol li {
-            margin: 6px 0;
-            padding: 5px 10px;
-            border-bottom: 1px dashed #cce6ff;
-        }
-
-        ol li:last-child {
-            border-bottom: none;
-        }
-
-        footer {
-            text-align: center;
-            padding: 15px;
-            color: #555;
-            margin-top: 20px;
-            font-size: 0.9em;
-        }
-
-        /* Animasi kecil agar lucu */
-        h1:hover {
-            transform: scale(1.05);
-            transition: 0.3s;
-            color: #ffff99;
-        }
-    </style>
 </head>
 
 <body>
     <header>
-        <h1>Kabupaten Sleman</h1>
+        <!-- Judul -->
+        <h1 class="p2">Kabupaten Sleman</h1>
+        <!-- Subjudul -->
         <h3>Daerah Istimewa Yogyakarta</h3>
     </header>
+    <hr>
 
+    <!-- Deksripsi -->
     <div class="container">
-        <p>Sleman adalah sebuah wilayah kabupaten yang terletak di Provinsi Daerah Istimewa Yogyakarta, Indonesia. Ibu
+        <p id="p1">Sleman adalah sebuah wilayah kabupaten yang terletak di Provinsi Daerah Istimewa Yogyakarta, Indonesia. Ibu
             kotanya adalah Kapanéwon Sleman. Sleman dikenal sebagai asal buah salak pondoh. Pada pertengahan tahun
             2024, jumlah penduduk Sleman sebanyak 1.118.353 jiwa.</p>
 
-        <p>Kabupaten ini berbatasan dengan Provinsi Jawa Tengah (Kabupaten Magelang, Kabupaten Boyolali, dan Kabupaten
+        <p class="p2">Kabupaten ini berbatasan dengan Provinsi Jawa Tengah (Kabupaten Magelang, Kabupaten Boyolali, dan Kabupaten
             Klaten) di utara dan timur, Kabupaten Gunungkidul, Kabupaten Bantul, dan Kota Yogyakarta di selatan, serta
             Kabupaten Kulon Progo di barat; di mana hal itu menjadikan Sleman sebagai satu-satunya kabupaten di DIY yang
             tidak memiliki pantai.</p>
-
+        <hr>
         <h4>Jumlah Penduduk</h4>
+
+        <!-- Tabel -->
         <table border="1" cellspacing="0">
             <tr align="center">
                 <th>No</th>
@@ -162,6 +55,9 @@
                 <td>1.179.382 jiwa</td>
             </tr>
         </table>
+
+        <!-- List -->
+         <hr>
         <h4>Kecamatan</h4>
         <div class="list-box">
         <ol>
@@ -182,10 +78,20 @@
             <li>Prambanan</li>
             <li>Kalasan</li>
         </ol>
-    </div>
+        <hr>
+        <!-- Link -->
+         <a href="https://slemankab.go.id/" target="_blank" rel="noopener noreferrer" title="Klik untuk membuka Website">Website Pemda Sleman</a>
+
+         <hr>
+         <!-- Image -->
+          <img src="Images/5-Ciri-Khas-Kabupaten-Sleman-Yogyakarta.png" alt="" height="200px" title="Ciri Khas Kabupaten Sleman">
+
+          <hr>
+          <!-- Iframe -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Z2wDV5JlInw?si=DRueWnIBEt2TfEtu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
     <footer>
-        &copy; 2024 Kabupaten Sleman Website | Dibuat dengan 💙
+        &copy; 2025 Kabupaten Sleman Website | Dibuat dengan 💙
     </footer>
 </div>
 </body>
